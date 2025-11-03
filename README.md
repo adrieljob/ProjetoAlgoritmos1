@@ -3,13 +3,13 @@ Repositório criado para armazenar os códigos relacionados ao projeto de Algori
 
 
 Integrantes: 
-  Anthony Job
-  Elisa Monteiro 
-  Estefany Carolyny
+  Anthony Job, 
+  Elisa Monteiro, 
+  Estefany Carolyny e 
   Luca Cabral
 
 Usuarios:
-  adrieljob
-  estefanycarilinyy1703
-  elisaterram
+  adrieljob, 
+  estefanycarilinyy1703, 
+  elisaterram e 
   LucaCsp
