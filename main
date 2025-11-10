@@ -1,0 +1,47 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+
+void criarConta();
+bool login();
+
+int main() {
+    int opcao;
+    bool logado = false;
+
+    do {
+        cout << "MENU PRINCIPAL" << endl;
+        cout << "Escolha uma opcao abaixo" << endl;
+        cout << "1 - Criar conta" << endl;
+        cout << "2 - Fazer login" << endl;
+        cout << "0 - Sair" << endl;
+        cout << "\nEscolha: ";
+        cin >> opcao;
+
+        system("cls");
+
+        switch (opcao) {
+            case 1:
+                criarConta();
+                break;
+            case 2:
+                logado = login(); 
+                break;
+            case 0:
+                cout << "Saindo..." << endl;
+                break;
+            default:
+                cout << "Opcao invalida!" << endl;
+                break;
+        }
+
+    } while (opcao != 0 && !logado);
+
+    if (logado) {
+        cout << "Acesso liberado ao sistema de musicas!" << endl;
+    }
+
+    return 0;
+}
