@@ -1,0 +1,28 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+
+void criarConta() {
+    string nome, senha;
+
+    cout << "\nCRIAR CONTA\n";
+    cout << "Digite um nome de usuario: ";
+    cin >> nome;
+    cout << "Digite uma senha: ";
+    cin >> senha;
+
+    ofstream arquivo("usuarios.txt", ios::app);
+    if (arquivo.is_open()) {
+        arquivo << nome << " " << senha << endl;
+        arquivo.close();
+        cout << "\nConta criada com sucesso!\n";
+    } else {
+        cout << "\nErro ao criar conta.\n";
+    }
+
+    system("pause");
+    system("cls");
+}
+ 
